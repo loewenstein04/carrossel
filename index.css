@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(batman.jpg);
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Formatação do Container */
+
+.container{
+    height: 560px;
+    width: 1000px;
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -45%);/* o eixo do container vai para o centro */
+}
+.nagacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+.bar{
+    background-color: azure;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .5s;
+    box-shadow: 1px 1px 1px black;
+}
+
+.bar:hover{
+    background-color: aquamarine;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: .3s;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+/* transição das imagens */
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333334%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50.0000000004%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666671%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333338%;
+}
